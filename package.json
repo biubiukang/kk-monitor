@@ -1,0 +1,39 @@
+{
+  "name": "kk-monitor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "lint:ts": "eslint",
+    "spellcheck": "cspell lint --dot --gitignore --color --cache --show-suggestions  \"(packages|apps)/**/*.@(html|js|cjs|mjs|ts|tsx|css|scss|md)\"",
+    "commit": "git-cz",
+    "prepare": "husky"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-git"
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "22.7.5",
+    "@eslint/js": "9.12.0",
+    "globals": "15.10.0",
+    "typescript": "5.5.3",
+    "typescript-eslint": "8.8.1",
+    "eslint-plugin-react-refresh": "0.4.24",
+    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
+    "eslint-plugin-prettier": "5.2.1",
+    "eslint-plugin-simple-import-sort": "12.1.1",
+    "eslint": "9.12.0",
+    "cspell": "8.14.4",
+    "@commitlint/cli": "19.8.1",
+    "@commitlint/config-conventional": "19.8.1",
+    "commitizen": "4.3.1",
+    "cz-git": "1.11.1",
+    "husky": "9.1.7"
+  }
+}
